@@ -32,13 +32,13 @@
 			</resource>
 		</resources>
 		<testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <filtering>true</filtering>
-            </testResource>
-        </testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+			</testResource>
+		</testResources>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<!-- 本地开发环境 -->
