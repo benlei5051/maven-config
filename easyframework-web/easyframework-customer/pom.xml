@@ -29,6 +29,10 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
+				<!-- 只会将下列文件打包 -->
+				<!-- <includes>
+					<include>environment.properties</include>
+				</includes> -->
 			</resource>
 		</resources>
 		<testResources>
