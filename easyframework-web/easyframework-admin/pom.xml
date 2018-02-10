@@ -18,18 +18,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-		</dependency>
 	</dependencies>
 	<build>
 		<!-- 首先第一个资源文件位置src/main/resources需要排除各个环境的配置文件， 各个环境的配置我们在第二个<resource>节点中通过前面在profile中配置的profiles.active属性来指定。 
@@ -40,9 +28,9 @@
 				<directory>src/main/resources</directory>
 				<!-- 资源根目录排除各环境的配置，使用单独的资源目录来指定 -->
 				<excludes>
-					<exclude>test/*</exclude>
-					<exclude>production/*</exclude>
-					<exclude>development/*</exclude>
+					<exclude>test/**</exclude>
+					<exclude>production/**</exclude>
+					<exclude>development/**</exclude>
 				</excludes>
 			</resource>
 			<resource>
