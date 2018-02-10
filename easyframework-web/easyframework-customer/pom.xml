@@ -28,11 +28,12 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<!-- 只会将下列文件打包 -->
-				<!-- <includes>
+				<filtering>false</filtering>
+				<!-- 只会将下列文件打包 ,filtering中的值对替换文件参数有效，而对includes和excludes无效-->
+				<includes>
 					<include>environment.properties</include>
-				</includes> -->
+					<include>test.txt</include>
+				</includes>
 			</resource>
 		</resources>
 		<testResources>
